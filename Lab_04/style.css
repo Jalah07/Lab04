@@ -1,0 +1,345 @@
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    
+}
+
+#logo {
+    max-width: 5%;
+}
+
+.img-logo {
+    display: flex;
+    align-items: center; 
+    float: left;
+    /*align-content: flex-start;*/
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+    /* float: right; */
+    
+}
+
+.navbar {
+    margin: 0 auto;
+    background: #fff;
+    padding: 0px 0;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;  
+}
+
+.navbar ul li {
+    display: inline-block;    
+}
+
+.navbar ul li a {
+    position:relative;
+    z-index: 1;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+
+}
+
+.navbar ul li a,
+.navbar ul li a:after,
+.navbar ul li a:before {
+  transition: all .5s;
+}
+.navbar ul li a:hover {
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+    color: #000;
+  }
+
+.navbar ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #04395E;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+
+.navbar ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+ h2, p {
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+h2 {
+    font-size: 40px;
+    color:#00688B;
+    text-align: center;
+}
+
+#sub-heading {
+    font-size: 30px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+#img-1 {
+    /*max-width: 50%;*/
+    width: 50%;
+    
+}
+
+.pets-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-bottom: 20px;
+   /* flex-wrap: wrap; width: 100%;*/
+   
+}
+
+.container-adopt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adopt-info {
+    max-width: 65%;
+    text-align: center;
+}
+
+.adopt-info p {
+    text-align: center;
+}
+
+#cat-adopt {
+    max-width: 500px;
+    height: auto;
+}
+
+#dog-adopt {
+    max-width: 500px;
+    height: auto;
+}
+
+.cat {
+    position: relative;
+    width: 50%;
+    height: 500px;
+}
+
+#cat-adopt {
+    width: 100%;
+    height: 500px;
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+    object-fit: scale-down;     
+}
+
+.cat button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-size: 16px;
+    padding: 12px 36px;
+    border: 3px solid #000;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #000;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.cat button:hover {
+    border: 5px solid #79ADDC ;
+    color: #79ADDC ;
+}
+
+.dog {
+    position: relative;
+    width: 50%;
+    
+}
+
+#dog-adopt {
+    width: 100%;
+    height: 500px;
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+    object-fit: scale-down;  
+    
+}
+
+.dog button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-size: 16px;
+    padding: 12px 36px;
+    border: 3px solid #000;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #000;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.dog button:hover {
+    border: 5px solid #79ADDC ;
+    color: #79ADDC ;
+}
+
+.reptile {
+    position: relative;
+    width: 50%;
+    
+}
+
+#reptile-adopt {
+    width: 100%;
+    height: 500px;
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+    object-fit: scale-down;  
+    
+}
+
+.reptile button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-size: 16px;
+    padding: 12px 36px;
+    border: 3px solid #000;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #000;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.reptile button:hover {
+    border: 5px solid #79ADDC ;
+    color: #79ADDC ;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #04395E;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    
+
+  }
+
+  .footer ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px; 
+    margin: 0; 
+    color: #000;
+  }
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.footer p {
+    text-align: center;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    h2 {
+
+    }
+
+    .links {
+        display: none;
+    }
+
+    #img-1 {
+        display: none;
+    }
+
+    .pets-container {
+        display: inline-block;
+        flex-direction: column;
+        width: 600px;  
+        position: relative;
+        align-items: center; 
+        padding-left: 30px; 
+    }
+
+    .adopt-info {
+        max-width: 80%;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+    }
+
+    footer ul {
+        text-align: start;
+        font-size: 20px;
+        
+    }
+
+    footer p {
+        width: 80%;
+        text-align: center;
+    }
+
+  }
