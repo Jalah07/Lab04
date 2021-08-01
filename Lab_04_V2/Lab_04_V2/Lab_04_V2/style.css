@@ -1,0 +1,87 @@
+#logo {
+    max-width: 5vh;
+    display: flex;
+   
+}
+
+
+.img-logo {
+    display: flex;
+    align-items: center; 
+    padding-left: 30px;
+    
+}
+
+
+h1 {
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+h2 {
+    padding-left: 30px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.featured-games h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+
+.featured-games img {
+    object-fit: cover;
+    width: 40vh;
+    height: 35vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.featured-games {
+    display: grid;
+    /*flex-direction: row;
+    flex-wrap: wrap;    
+    flex: 0 0 505px;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;;
+    max-width: 20vh;
+}
+
+.game_card{
+    padding: 0 !important;
+    width: 40vh;
+    margin:30px; 
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    
+    
+  }
+
+  .game_card p {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: 'Dosis', sans-serif;
+  }
+
+
+  .game_card a {
+    border-radius: 100%;
+    border: none;
+    background-color: #FF3D49;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(235, 231, 231);
+    margin: auto;
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+
+}
+
+.button_container {
+    padding-right: 10px;  
+}
+
