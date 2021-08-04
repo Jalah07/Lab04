@@ -13,7 +13,7 @@
 }
 
 
-h1 {
+.img-logo h1 {
     font-size: 30px;
     padding-left: 10px;
     font-family: 'Dosis', sans-serif;
@@ -43,16 +43,13 @@ h2 {
 
 .featured-games {
     display: grid;
-    /*flex-direction: row;
-    flex-wrap: wrap;    
-    flex: 0 0 505px;*/
     grid-template-columns: 1fr 1fr 1fr 1fr;;
     max-width: 20vh;
 }
 
 .game_card{
     padding: 0 !important;
-    width: 40vh;
+    max-width: 40vh;
     margin:30px; 
     border-radius: 10px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
@@ -83,5 +80,84 @@ h2 {
 
 .button_container {
     padding-right: 10px;  
+}
+
+
+/* iPhone 6/7/8 size screen */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #logo {
+        max-width: 4vh;
+        display: flex;
+       
+    }
+
+    .featured-games img {
+        object-fit: cover;
+        width: 40vh;
+        height: 35vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    .featured-games {
+        display: flex;
+        flex-direction: column;
+        max-width: 10vh;
+        
+    }  
+    
+    .game_card{
+        padding: 0;
+        width: 45vh;
+        margin:20px; 
+        border-radius: 10px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+        
+      }
+
+}
+
+
+
+/* iPad size screen */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #logo {
+        max-width: 4vh;
+        display: flex;
+       
+    }
+
+    .featured-games img {
+        object-fit: cover;
+        width: 30vh;
+        height: 35vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    .featured-games {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 10vh;
+        
+    }  
+    
+    .game_card{
+        padding: 0;
+        width: 30vh;
+        margin:30px; 
+        border-radius: 10px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+      }
+
 }
 
